@@ -1,0 +1,42 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    string website;//doubt (color is not changing of the datatype)
+    string destination;
+    cout<<"Enter website:"<<endl;
+    cin>>website;
+    if (website=="MakeMyTrip"){ //doubt(not counting space)
+        cout<<"Choose your destination:International or Domestic?" <<endl;
+        cin>>destination;
+        if(destination=="International"){
+            cout<<"Choose country:Japan or Russia?"<<endl;
+            cin>>destination;
+            if(destination=="Japan"){
+                cout<<"Price:60,000/-"<<endl;
+            }else if(destination=="Russia"){
+                cout<<"Price:90,000/-"<<endl;
+            }else{
+                   cout<<"Invalid country"<<endl;
+            }
+        }else if(destination=="Domestic"){
+            cout<<"Choose country:Pakistan or Bangladesh?"<<endl;
+            cin>>destination;
+            if(destination=="Pakistan"){
+                cout<<"Price:10,000/-"<<endl;
+            }else if(destination=="Bangladesh"){
+                cout<<"Price:50,000/-"<<endl;
+            }else{
+                cout<<"Invalid country"<<endl;
+            }
+        }else{
+            cout<<"Invalid destination"<<endl;
+        }
+        
+    }else {
+        cout<<"Invalid address"<<endl;
+    }
+    cout<<"Thank You";
+
+    return 0;
+}
